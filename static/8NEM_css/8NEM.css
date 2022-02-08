@@ -1,0 +1,19 @@
+body {
+    background-color: skyblue;
+    text-align:center;
+  }
+  
+  .selection-group input[type="radio"] {
+    display: none;
+  }
+  
+  /* 画像部分に余白を持たせる */
+  label img {
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  /* 選択されたラジオボタンの画像の背景をオレンジ色に変える */
+  .selection-group input[type="radio"]:checked + label img {
+    background: orange;
+  }

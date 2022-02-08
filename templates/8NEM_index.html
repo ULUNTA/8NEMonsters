@@ -1,0 +1,19 @@
+{% extends '8NEM_base.html' %}
+
+{% block content %}
+
+<h1>
+8NEMonster
+</h1><br>
+<form action="/card" method="POST" enctype="multipart/form-data">
+    <div>
+        <label for="name">XYMAddress：</label>
+        <input type="text" id="name" name="address" placeholder="Nから始まるアドレス" style="width:30%;"><br><br>
+    </div>
+    <div>
+        <input type="submit" value="始める"　class="button">
+    </div>
+</form>
+
+<p>※遊び方<br>上の段と下の段の1体だけ<br>同じNEMonsterがいます。<br>画像をクリックして<br>攻撃ボタンを押してください。<br>全部で8回あります。<br>回数に応じてMozaicが送金されます。</p>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends '8NEM_base.html' %}
+
+{% block content %}
+<meta http-equiv="refresh" content=" 8; url=https://ulunta.pythonanywhere.com">
+<p>あなたのAddress:{{ name }}</p>
+<p>得点:{{ point }}点</p>
+<p>開始時間:{{ start }}</p>
+<p>終了時間:{{ end }}</p>
+<p>タイム:{{ time }}秒</p>
+
+<img src="{{ url_for('static', filename='/8NEM_img/all.png') }}"  width="823px" height="378px" alt="all">
+
+<h1>ご利用ありがとうございました！</h1>
+
+<a href="{{ url_for('index') }}">トップ画面に戻る</a>
+
+
+{% endblock %}
